@@ -1,21 +1,15 @@
 package me.hong.kotlin.part1
 
 /**
- * 비교 연산자(Comparison Operator) == != > < >= <=
+ * 논리 연산자(Logical Operator) && || !
  */
 fun main(args: Array<String>) {
-  var isRight: Boolean = (10 + 70) > (3 * 25)
-  println(isRight)
+  val a = 15
+  val b = 17
 
-  isRight = false
-  println(isRight)
+  var bool: Boolean = (a - b < a + b && (a == 15))
+  println(bool)
 
-  isRight = 30 == (10 + 20)
-  println(isRight)
-
-  isRight = 0.00001f == 0.005f * 0.002f
-  println(isRight)
-
-  isRight = 3.0 * 5 + 2.7 <= 16
-  println(isRight)
+  bool = !((a + b) > (a * 3) || (b - a) > 0)
+  println(bool)
 }

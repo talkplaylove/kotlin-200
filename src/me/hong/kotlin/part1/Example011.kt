@@ -4,12 +4,14 @@ package me.hong.kotlin.part1
  * 문자열(String)
  */
 fun main(args: Array<String>) {
-  var ch: Char = 'A'
-  println(ch)
+  var str: String = "Hello"
+  println(str)
 
-  ch = '\uAC00'
-  println(ch)
+  str = str + "\nKotlin!"
+  println(str)
 
-  ch = '한'
-  println(ch.toInt())
+  println(str[8])
+
+  val num = 10 + 5 + 3
+  println(str + num)
 }

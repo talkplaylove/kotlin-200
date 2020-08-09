@@ -1,17 +1,14 @@
 package me.hong.kotlin.part1
 
 /**
- * 문자열(String)
+ * 문자열 안에 표현식의 값을 집어넣기
  */
 fun main(args: Array<String>) {
-  var str: String = "Hello"
-  println(str)
+  val a = 10
+  val b = 20
 
-  str = str + "\nKotlin!"
-  println(str)
+  println("a의 값: $a")
+  println("b의 값: $b")
 
-  println(str[8])
-
-  val num = 10 + 5 + 3
-  println(str + num)
+  println("a + b = ${a + b}")
 }

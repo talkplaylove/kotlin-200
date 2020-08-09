@@ -1,14 +1,18 @@
 package me.hong.kotlin.part1
 
 /**
- * 주석(Comment)
+ * 배정 연산자(Assignment Operator) =
  */
 fun main(args: Array<String>) {
-  /*
-   * 라인 주석임
-   * 두 번쨰 줄임
-   */
+  val a: Int
+  var b: Int
 
-  // 한줄 주석임
-  println("다 똑같지 뭐..")
+  a = 10 + 5
+  b = 10
+
+  b += a
+  println(b)
+
+  b %= 3
+  println(b)
 }

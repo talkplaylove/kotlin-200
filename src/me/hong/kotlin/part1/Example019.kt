@@ -1,15 +1,16 @@
 package me.hong.kotlin.part1
 
 /**
- * 논리 연산자(Logical Operator) && || !
+ * 흐름 제어-조건문 if
  */
 fun main(args: Array<String>) {
-  val a = 15
-  val b = 17
+  var a = 15
+  var b = 11
 
-  var bool: Boolean = (a - b < a + b && (a == 15))
-  println(bool)
+  if (a > b) {
+    println("if 안으로 들어옴")
+    a -= b
+  }
 
-  bool = !((a + b) > (a * 3) || (b - a) > 0)
-  println(bool)
+  println(a)
 }

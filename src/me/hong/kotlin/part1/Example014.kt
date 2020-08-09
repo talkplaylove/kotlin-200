@@ -1,11 +1,14 @@
 package me.hong.kotlin.part1
 
 /**
- * 타입 별명(Type Alias)
+ * 주석(Comment)
  */
-typealias Number = Int
-
 fun main(args: Array<String>) {
-  val a: Number = 10
-  println(a)
+  /*
+   * 라인 주석임
+   * 두 번쨰 줄임
+   */
+
+  // 한줄 주석임
+  println("다 똑같지 뭐..")
 }
